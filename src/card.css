@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(to right, rgb(50, 90, 103), rgb(58, 89, 161));
+    ;
+}
+.card {
+    display: inline-block;
+    background-color: #9eebcf;
+    padding: 1rem;
+    margin: .5rem;
+    transition: transform .25s ease-out;
+    border: 2px groove rgb(126, 123, 123);
+    border-top: 10px solid rgb(144, 238, 221);
+    border-radius: 0.5rem;
+    box-shadow: 10px 4px 8px 0 rgb(0 0 0/20%);
+    text-align: center;
+    border-width: .25rem;
+
+}
+.card:hover {
+    transform: scale( 1.05);
+}
+.search-box {
+    padding: .25rem;
+}
+
+.search-box > input{
+    padding: 1rem;
+    background-color: lightblue;
+    border: 2px solid green;
+}
+
+.app-style {
+    text-align: center;
+}
+
+.app-style > h1 {
+    font-weight: 200;
+    color: rgb(75, 179, 206);
+    font-size: 2.25rem;
+}
+.loadapp{
+    justify-content: center;
+    text-align: center;
+    color: rgb(75, 179, 206);
+    font-weight: 50;
+    font-size: 2.25rem;
+}
+.loadapp > h1{
+    font-weight: 50;
+    font-size: 2.25rem;
+
+}
