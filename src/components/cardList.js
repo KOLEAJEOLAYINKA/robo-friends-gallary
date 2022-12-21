@@ -2,6 +2,9 @@ import React from "react";
 import Card from "./card";
 
 const CardList = ({ robots }) => {
+  if (false) {
+    throw new Error("Opps An Eroor Occur::")
+  }
   return (
     <div>
       {robots.map((user, num) => {
