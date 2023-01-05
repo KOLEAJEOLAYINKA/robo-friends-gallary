@@ -34,8 +34,10 @@ body {
 }
 
 .app-style > h1 {
+    
+    font-family: 'SEGA LOGO FONT';
     font-weight: 200;
-    color: rgb(75, 179, 206);
+    color: #a0ead0;
     font-size: 2.25rem;
 }
 .loadapp{

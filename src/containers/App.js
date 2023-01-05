@@ -4,6 +4,7 @@ import SearchBox from "../components/SearchBox";
 import Scroll from "../components/scroll";
 import { robots } from "../robots";
 import "../App.css";
+import ErrorBoundary from "../components/errorBoundary";
 
 class App extends Component {
   constructor() {
@@ -25,32 +26,28 @@ class App extends Component {
       .then((user) => this.setState({ robot: user }));
   }
   render() {
-    const {robots, searchFields} = this.state
+    const { robots, searchFields } = this.state;
     const filterRobots = robots.filter((robot) => {
-      return robot.name
-        .toLowerCase()
-        .includes(searchFields.toLowerCase());
+      return robot.name.toLowerCase().includes(searchFields.toLowerCase());
     });
     // console.log(filterRobots);
-    return (!robots.length) ?
-      (
-  
-        <div className="loadapp">
-          <h1>Loading...</h1>
-        </div>
-      )
-       :
-      (
-        <div className="app-style">
-          <h1>Robo Friends Gallary</h1>
-          {/* <h1>{this.state.searchFields}</h1> */}
-          <SearchBox onSearchChange={this.onSearchChange} />
-          <Scroll>
+    return !robots.length ? (
+      <div className="loadapp">
+        <h1>Loading...</h1>
+      </div>
+    ) : (
+      <div className="app-style">
+        <h1>Robo Friends Gallary</h1>
+        {/* <h1>{this.state.searchFields}</h1> */}
+        <SearchBox onSearchChange={this.onSearchChange} />
+
+        <Scroll>
+          <ErrorBoundary>
             <CardList robots={filterRobots} />
-          </Scroll>
-        </div>
-      );
-    
+          </ErrorBoundary>
+        </Scroll>
+      </div>
+    );
   }
 }
 export default App;
