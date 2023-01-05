@@ -1,6 +1,6 @@
 # Robo Friends Gallary 🤹
 
-[RoboFriends](https://koleajeolayinka.github.io/robo-friends-gallary/) is a React-based app that lets you search for robots based on their names using APIs. The application is fully responsive and functional on a wide range of screens.
+[RoboFriends](https://koleajeolayinka.github.io/robo-friends-gallery/) is a React-based app that lets you search for robots based on their names using APIs. The application is fully responsive and functional on a wide range of screens.
 ![RoboFriends Gallary Capture](https://lh3.googleusercontent.com/pw/AL9nZEWJg9LBYFlNszgBErS5--ickbN3Hyvra-2K1lD9bV7ee1D1m5PZWAsmKTdunmbJGL42-5_mbaznudc0Ed8ZrmfaKNV3t26WY-k9HeXBBLd71-KE4qtzKHWkXvZgnMSyjF_Lut0TZaVChmULSI3wV69T=w1743-h980-no)
 
 <br />
